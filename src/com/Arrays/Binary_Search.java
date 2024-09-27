@@ -4,7 +4,7 @@ public class Binary_Search {
 	
 	public static int biSearch(int[] arr,int key) {
 		int sp=0;
-		int ep=arr.length;
+		int ep=arr.length-1;
 		
 		while(sp<=ep) {
 			int mid = (sp+ep)/2;
@@ -13,7 +13,7 @@ public class Binary_Search {
 				return mid;
 			}
 			
-			else if (key>mid) {
+			else if (key>arr[mid]) {
 				sp=mid + 1;
 			}
 			else {
