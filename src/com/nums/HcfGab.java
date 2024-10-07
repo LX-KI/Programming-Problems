@@ -10,8 +10,9 @@ public static int hcf(int a, int b) {
 			b=b%a;
 		}
 	}
-	return (a!=0)?a:b;
-}
+	int res=(a!=0)?a:b;
+
+	return res;}
 public static void main(String[] args) {
 	System.out.println(hcf(18,24));
 }
